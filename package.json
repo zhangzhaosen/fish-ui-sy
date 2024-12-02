@@ -1,11 +1,11 @@
 {
-  "name": "fish-ui-sy",
-  "private": true,
-  "version": "0.0.0",
+  "name": "zhangzhaohong9-fish-ui-sy",
+  "private": false,
+  "version": "0.6.8",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build && tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -14,28 +14,46 @@
     "build-storybook-docs": "storybook build --docs",
     "test": "vitest"
   },
+  "main": "dist/fish-ui-sy.cjs.js",
+  "module": "dist/fish-ui-sy.es.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@ctrl/tinycolor": "^4.1.0",
     "@griffel/react": "^1.5.25",
+    "fish-ui-sy-react-icons": "^0.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.9.0",
     "@eslint/js": "^9.9.0",
+    "@storybook/addon-docs": "^8.4.3",
     "@storybook/addon-essentials": "8.3.3",
     "@storybook/addon-interactions": "8.3.3",
     "@storybook/addon-links": "8.3.3",
+    "@storybook/addon-mdx-gfm": "^8.4.3",
     "@storybook/addon-onboarding": "8.3.3",
+    "@storybook/addons": "^7.6.17",
+    "@storybook/api": "^7.6.17",
     "@storybook/blocks": "8.3.3",
+    "@storybook/components": "^8.4.3",
     "@storybook/react": "8.3.3",
     "@storybook/react-vite": "8.3.3",
     "@storybook/test": "8.3.3",
+    "@storybook/types": "^8.3.5",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "codesandbox-import-utils": "^2.2.3",
+    "dedent": "^1.5.3",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
@@ -46,11 +64,16 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
+    "vite-plugin-dts": "4.2.3",
     "vitest": "^2.1.1"
   },
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangzhaosen/fish-ui-sy"
   }
 }

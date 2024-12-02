@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react";
-import type { Theme } from "fish-ui-sy";
+import type { Theme } from "zhangzhaohong9-fish-ui-sy";
 import { useThemeStyleTag } from "../useThemeStyleTag";
 
 describe("useThemeStyleTag", () => {

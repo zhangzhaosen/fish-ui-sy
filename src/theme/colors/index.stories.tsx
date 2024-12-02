@@ -6,7 +6,7 @@ import {
   webLightTheme,
   webDarkTheme,
   Theme,
-} from "fish-ui-sy";
+} from "zhangzhaohong9-fish-ui-sy";
 import { makeStyles } from "@griffel/react";
 import { ColorRampItem } from "./ColorRamp.stories";
 

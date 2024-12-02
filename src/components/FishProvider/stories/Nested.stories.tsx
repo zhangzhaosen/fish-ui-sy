@@ -1,5 +1,5 @@
 import { makeStyles } from "@griffel/react";
-import { tokens, FishProvider } from "fish-ui-sy";
+import { tokens, FishProvider } from "zhangzhaohong9-fish-ui-sy";
 
 const useStyles = makeStyles({
   example: {
@@ -47,3 +47,5 @@ function Child() {
     </div>
   );
 }
+
+export default Nested

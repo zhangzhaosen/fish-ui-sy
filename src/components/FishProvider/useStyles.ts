@@ -1,5 +1,5 @@
 import {makeStyles, mergeClasses} from '@griffel/react'
-import {FishProviderProps, tokens} from 'fish-ui-sy'
+import {FishProviderProps, tokens} from 'zhangzhaohong9-fish-ui-sy'
 import {useThemeStyleTag} from './useThemeStyleTag'
 const FishProviderClassNames = {
   root: 'fish-ui-FishProvider'

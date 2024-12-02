@@ -1,10 +1,10 @@
-import { teamsLightTheme } from "fish-ui-sy";
+import { teamsLightTheme } from "zhangzhaohong9-fish-ui-sy";
 import type {
   FontFamilyTokens,
   FontSizeTokens,
   FontWeightTokens,
   LineHeightTokens,
-} from "fish-ui-sy";
+} from "zhangzhaohong9-fish-ui-sy";
 import { makeStyles } from "@griffel/react";
 
 const theme = teamsLightTheme;

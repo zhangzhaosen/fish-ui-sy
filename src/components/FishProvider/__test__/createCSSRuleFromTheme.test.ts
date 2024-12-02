@@ -1,4 +1,4 @@
-import type { PartialTheme } from "fish-ui-sy";
+import type { PartialTheme } from "zhangzhaohong9-fish-ui-sy";
 import { createCSSRuleFromTheme } from "../createCSSRuleFromTheme";
 
 //import { describe, it, expect } from "vitest";

@@ -7,13 +7,14 @@ import {
   teamsDarkTheme,
   webDarkTheme,
   teamsHighContrastTheme,
-} from "fish-ui-sy";
+} from "zhangzhaohong9-fish-ui-sy";
 
 const useStyles = makeStyles({
   provider: {
     border: "1px",
     borderRadius: "5px",
     padding: "5px",
+    
   },
   text: {
     backgroundColor: tokens.colorBrandBackground2,
@@ -27,7 +28,8 @@ const useStyles = makeStyles({
 
 export const Default = () => {
   const styles = useStyles();
-  debugger;
+  
+  //debugger;
   return (
     <>
       <div>
@@ -61,3 +63,5 @@ export const Default = () => {
     </>
   );
 };
+
+export default Default

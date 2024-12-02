@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from 'fish-ui-sy';
+import { Header } from 'zhangzhaohong9-fish-ui-sy';
 import './page.css';
 
 type User = {

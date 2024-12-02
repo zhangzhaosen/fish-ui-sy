@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { expect, userEvent, within } from '@storybook/test';
 
-import { Page } from 'fish-ui-sy';
+import { Page } from 'zhangzhaohong9-fish-ui-sy';
 
-const meta = {
+const meta:any = {
   title: 'Example/Page',
   component: Page,
   parameters: {

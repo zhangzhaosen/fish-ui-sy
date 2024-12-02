@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react";
-import { FishProvider } from "fish-ui-sy";
+import { FishProvider } from "zhangzhaohong9-fish-ui-sy";
 import { Default } from "./Default.stories";
 import DefaultSource from "./Default.stories?raw";
 

@@ -1,5 +1,5 @@
-import { teamsLightTheme } from "fish-ui-sy";
-import type { BorderRadiusTokens } from "fish-ui-sy";
+import { teamsLightTheme } from "zhangzhaohong9-fish-ui-sy";
+import type { BorderRadiusTokens } from "zhangzhaohong9-fish-ui-sy";
 
 const theme = teamsLightTheme;
 

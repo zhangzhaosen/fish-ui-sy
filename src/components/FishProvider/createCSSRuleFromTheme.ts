@@ -1,4 +1,4 @@
-import { Theme, PartialTheme } from "fish-ui-sy";
+import { Theme, PartialTheme } from "zhangzhaohong9-fish-ui-sy";
 
 /**
  * 根据theme，创建一个css规则，

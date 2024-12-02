@@ -1,8 +1,8 @@
-import React from 'react';
+//import React from 'react';
 
 import './button.css';
 
-export interface ButtonProps {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** Is this the principal call to action on the page? */
   primary?: boolean;
   /** What background color to use */
@@ -10,7 +10,7 @@ export interface ButtonProps {
   /** How large should the button be? */
   size?: 'small' | 'medium' | 'large';
   /** Button contents */
-  label: string;
+  label?: string;
   /** Optional click handler */
   onClick?: () => void;
 }
@@ -21,6 +21,7 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  children, 
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
@@ -31,7 +32,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {label || children}
     </button>
   );
 };
