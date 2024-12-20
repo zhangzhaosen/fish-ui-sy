@@ -7,11 +7,11 @@ import Multiline from "./WatermarkMultiline.stories";
 import Image from "./WatermarkImage.stories";
 
 // ! raw code imports
-/*  @ts-expect-error - required for ts*/
+
 import DefaultSource from "./WatermarkDefault.stories.tsx?raw";
-/*  @ts-expect-error - required for ts*/
+
 import MultilineSource from "./WatermarkMultiline.stories.tsx?raw";
-/*  @ts-expect-error - required for ts*/
+
 import ImageSource from "./WatermarkImage.stories.tsx?raw";
 
 const meta: Meta = {

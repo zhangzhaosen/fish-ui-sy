@@ -6,3 +6,5 @@ export * from './hooks'
 export * from "./utils";
 
 export * from './ssr/canUseDOM'
+
+export type ContextSelector<U, T> = (param:any)=>T

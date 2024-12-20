@@ -24,33 +24,33 @@ import TitleCustomAction from "./DialogTitleCustomAction.stories";
 import TitleNoAction from "./DialogTitleNoAction.stories";
 
 // ! raw code imports
-/*  @ts-expect-error - required for ts*/
+
 import DefaultSource from "./DialogDefault.stories.tsx?raw";
-/*  @ts-expect-error - required for ts*/
+
 import NonModalSource from "./DialogNonModal.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import AlertSource from "./DialogAlert.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import ScrollingLongContentSource from "./DialogScrollingLongContent.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import ActionsSource from "./DialogActions.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import FluidActionsSource from "./DialogFluidDialogActions.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import NoFocusableElementSource from "./DialogNoFocusableElement.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import ControllingOpenAndCloseSource from "./DialogControllingOpenAndClose.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import ChangeFocusSource from "./DialogChangeFocus.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import TriggerOutsideDialogSource from "./DialogTriggerOutsideDialog.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import CustomTriggerSource from "./DialogCustomTrigger.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import WithFormSource from "./DialogWithForm.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import TitleCustomActionSource from "./DialogTitleCustomAction.stories?raw";
-/*  @ts-expect-error - required for ts*/
+
 import TitleNoActionSource from "./DialogTitleNoAction.stories?raw";
 
 const meta: Meta = {
