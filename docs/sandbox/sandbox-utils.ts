@@ -21,13 +21,31 @@ export function addHiddenInput(
 
 export function prepareSandboxContainer(context: StoryContext) {
   const docsSelector = `#anchor--${context.id} .docs-story`;
-  const rootElement = document.querySelector(docsSelector);
+  const docsSelectorOfMdx = `#story--组件-portal-tomountnodeprops--default`; // mdx文档的css选择器
+
+  const rootElement =
+    document.querySelector(docsSelector) ||
+    document.querySelector(docsSelectorOfMdx);
 
   if (!rootElement) {
-    throw new Error(`css selector: ${docsSelector}, doesn't exist `);
+    throw new Error(
+      `css selector: ${docsSelector || docsSelectorOfMdx}, doesn't exist `
+    );
   }
 
-  const showCodeButton = rootElement.querySelector(".docblock-code-toggle");
+  let showCodeButton: HTMLElement | null = rootElement.querySelector(
+    ".docblock-code-toggle"
+  );
+
+  if (!showCodeButton) {
+    // 检查mdx文档的css选择器
+    // 这里的的css层级，我是通过审查元素找到的
+    const docStory = rootElement.closest(".docs-story");
+    if (docStory) {
+      showCodeButton = docStory.querySelector(".docblock-code-toggle");
+    }
+  }
+
   const container = showCodeButton?.parentElement;
 
   if (!container) {
@@ -35,7 +53,7 @@ export function prepareSandboxContainer(context: StoryContext) {
   }
 
   const classList = (
-    showCodeButton.classList.value + " with-code-sandbox-button"
+    showCodeButton!.classList.value + " with-code-sandbox-button"
   ).split(" ");
 
   // remove button if it already existed
